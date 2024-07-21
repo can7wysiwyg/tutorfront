@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  
+
 }
 
 
@@ -67,3 +69,13 @@ body {
       margin-right: 0px; }
       .custom-navbar .custom-navbar-cta li:first-child {
         margin-right: 20px; }
+
+
+
+       h1, h2, h3, h4, h5, h6, p {
+        padding: 0 10px;
+       
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+        }     

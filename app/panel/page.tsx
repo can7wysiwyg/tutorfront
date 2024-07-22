@@ -61,8 +61,10 @@ export default function page() {
           <div className="card text-white bg-primary">
             <div className="card-body text-center">
             
+          
+              <h5 className="card-title mt-2"><Link href="/panel/profile" style={{color: "white"}}> My Profile </Link></h5>
 
-              <h5 className="card-title mt-2"><Link href="/profile" style={{color: "white"}}> My Profile </Link></h5>
+          
               <p className="card-text">Manage your profile here.</p>
             </div>
           </div>

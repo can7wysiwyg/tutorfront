@@ -1,7 +1,7 @@
 import { AUTHENTICATION_ERROR, GET_USER, LOGIN_USER, REGISTER_USER } from "../actions/types";
 
 interface AuthState {
-    user: any; // Adjust the type of user as per your application needs
+    user: any  | null; // Adjust the type of user as per your application needs
     msg: string | null; // Assuming msg can be a string or null
   }
   

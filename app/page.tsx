@@ -4,6 +4,7 @@ import { AppDispatch, RootState } from "@/redux/store";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import ProfileCheck from "./ProfileCheck";
 
 export default function Home() {
   const dispatch = useDispatch<AppDispatch>()
@@ -33,11 +34,15 @@ export default function Home() {
   }, [dispatch])
 
 
-console.log(subjects)
+// console.log(subjects)
   
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+
+      {
+        ProfileCheck()
+      }
 
       <h4>welcome paul</h4>
 

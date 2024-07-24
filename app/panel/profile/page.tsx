@@ -34,7 +34,6 @@ export default function UserProfile() {
     setFadeIn(true);
   }, []);
 
-  let editProfile: string = user._id
       
 
 
@@ -45,7 +44,7 @@ export default function UserProfile() {
       className={`${styles['user-details']} ${fadeIn ? "fade-in" : ""}`}
       ref={userDetailsRef}
       style={{ marginTop: "3rem", textAlign: "center", fontFamily: "Helvetica" }}>
-        <h5>edit <Link href={`/panel/profile/${editProfile}`}>my profile</Link></h5>
+        <h5>edit <Link href={`/panel/profile/makeedit`}>my profile</Link></h5>
 
 
 

@@ -4,15 +4,25 @@ import { useEffect, useState } from 'react';
 import { DashboardComp } from "@/helpers/DashboardComp";
 import { AuthComp } from "@/helpers/AuthComp";
 import Link from "next/link";
+import ProfileCheck from './ProfileCheck';
 
 function NaviBar() {
     const [isClient, setIsClient] = useState(false);
+
+   
 
     useEffect(() => {
         setIsClient(true);
     }, []);
 
+
+
+
     return (
+        <>
+        {/* {
+            ProfileCheck()
+        } */}
         <nav className="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="Furni navigation bar">
             <div className="container">
                 <Link className="navbar-brand" href="/">
@@ -42,6 +52,8 @@ function NaviBar() {
                 </div>
             </div>
         </nav>
+
+        </>
     );
 }
 

@@ -1,5 +1,5 @@
 import axios from "axios"
-import { GEN_ERROR, UPDATE_PIC } from "./types"
+import { GEN_ERROR, GET_USERS, UPDATE_PIC } from "./types"
 import { ApiUrl } from "@/helpers/ApiUrl"
 import { getAccessToken } from "@/helpers/AccessToken"
 
@@ -31,4 +31,30 @@ export function updatePicture(id: string, data: any) {
         }
 
     }
+}
+
+
+export function getUsers() {
+    return async function(dispatch: any) {
+
+        try {
+
+            const response = await axios.get(`${ApiUrl}/user/users`)
+            const users: [] = response.data.users
+
+            dispatch({type: GET_USERS, payload: users})
+
+            
+        } catch (error) {
+
+            console.error(error)
+            dispatch({type: GEN_ERROR})
+            throw error
+            
+        }
+
+
+
+
+    } 
 }

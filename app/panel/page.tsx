@@ -61,7 +61,7 @@ export default function page() {
           <div className="card text-white bg-primary">
             <div className="card-body text-center">
             
-          
+            <i className="bi bi-person"></i>
               <h5 className="card-title mt-2"><Link href="/panel/profile" style={{color: "white"}}> My Profile </Link></h5>
 
           
@@ -72,8 +72,10 @@ export default function page() {
         <div className="col-md-4 mb-4 animated-card">
           <div className="card text-white bg-success">
             <div className="card-body text-center">
-        
 
+            <i className="bi bi-pen-fill"></i>
+        
+                 
               <h5 className="card-title mt-2"> <Link href="/panel/makepost" style={{color: "white"}}>Make Post </Link></h5>
               <p className="card-text">Make a new tutoring post.</p>
             </div>
@@ -84,9 +86,10 @@ export default function page() {
         <div className="col-md-4 mb-4 animated-card">
           <div className="card text-white bg-danger">
             <div className="card-body text-center">
-            <i className="icon fas fa-users"></i>
+            <i className="bi bi-journal"></i>
 
             {isClient && (
+            
 
               <h5 className="card-title mt-2"> <Link href={`/panel/${myposts}`} style={{color: "white"}}> My Posts</Link></h5>
 

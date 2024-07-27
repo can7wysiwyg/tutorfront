@@ -79,3 +79,26 @@ body {
           font-weight: 300;
           font-style: normal;
         }     
+
+
+
+        .mycard {
+          border: none;
+        }
+
+        hr {
+          color: #a09c9c;
+          margin-top: 4px;
+          margin-bottom: 8px;
+        }
+
+
+        .rounded-image {
+          border-radius: 50% !important;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 50px;
+        }
+        
